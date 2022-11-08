@@ -7,7 +7,8 @@ module.exports = {
     overrides: [],
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
+        sourceType: 'module',
+        project: ['./tsconfig.json']
     },
     rules: {
         indent: ['error', 4]
