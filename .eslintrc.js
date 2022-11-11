@@ -11,7 +11,7 @@ module.exports = {
         project: ['./tsconfig.json']
     },
     rules: {
-        indent: ['warn', 4],
+        indent: ['error', 4],
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/no-extraneous-class': 'off'
     }
