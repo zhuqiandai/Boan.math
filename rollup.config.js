@@ -4,7 +4,7 @@ module.exports = [
     {
         input: 'modules/mat/main.ts',
         output: {
-            dir: 'dist',
+            dir: 'dist/mat/',
             format: 'cjs'
         },
         plugins: [
@@ -18,9 +18,9 @@ module.exports = [
         ]
     },
     {
-        input: 'modules/web/main.ts',
+        input: 'modules/gis/main.ts',
         output: {
-            dir: 'dist',
+            dir: 'dist/gis/',
             format: 'cjs'
         },
         plugins: [

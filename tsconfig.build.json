@@ -1,0 +1,5 @@
+{
+    "extends": "./tsconfig.json",
+    "references": [{ "path": "modules/mat" }, { "path": "modules/gis" }],
+    "exclude": []
+}
