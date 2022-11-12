@@ -1,25 +1,21 @@
 {
     "compilerOptions": {
-        /* Visit https://aka.ms/tsconfig to read more about this file */
         "target": "esnext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
         "module": "esnext" /* Specify what module code is generated. */,
         "moduleResolution": "node",
-        "noImplicitAny": false,
-        "allowJs": true,
-        "checkJs": false,
-        "noEmit": true,
-        "allowSyntheticDefaultImports": true,
-        "resolveJsonModule": true,
-        "skipLibCheck": true,
         "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
-        "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
         "paths": {
-            "@boan.math/mat": ["modules/mat"],
-            "@boan.math/gis": ["modules/gis"]
+            "src/*": ["src/*"]
         },
-
+        "resolveJsonModule": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+        "forceConsistentCasingInFileNames": true,
         "strict": true /* Enable all strict type-checking options. */
     },
-    "include": ["modules"],
-    "exclude": []
+    "include": ["src/*"],
+    "exclude": ["node_modules"]
 }

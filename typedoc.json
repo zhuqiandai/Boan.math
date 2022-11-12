@@ -1,5 +1,5 @@
 // typedoc.json
 {
-    "entryPoints": ["modules/mat/main.ts", "modules/gis/main.ts"],
+    "entryPoints": ["src/main.ts"],
     "out": "doc"
 }
