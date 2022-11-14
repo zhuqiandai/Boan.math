@@ -7,12 +7,6 @@ module.exports = {
         format: 'esm'
     },
     plugins: [
-        typescript({
-            exclude: 'node_modules/**',
-            compilerOptions: {
-                lib: ['es5', 'es6', 'dom', 'esnext'],
-                target: 'esnext',
-            }
-        })
+        typescript()
     ]
 }

@@ -1,2 +1,7 @@
-export { default as vec3 } from 'src/vec/vec3'
-export { default as mat4 } from 'src/mat/mat4'
+import {vec3} from './vec'
+import {mat4} from './mat'
+
+export {
+    vec3,
+    mat4
+}
