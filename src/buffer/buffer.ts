@@ -4,10 +4,10 @@ class buffer {
 
     constructor(dim: number) {
         this._dim = dim
-        this._memo = buffer._alloc(dim)
+        this._memo = buffer.alloc(dim)
     }
 
-    private static _alloc(dim: number) {
+    private static alloc(dim: number) {
         return new Float32Array(dim)
     }
 

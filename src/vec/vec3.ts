@@ -1,7 +1,7 @@
 import vec_buffer from "src/buffer/vec_buffer";
 
 /**
- *  Static Class Vector3 build and methods
+ *  Static Class vector3 build and methods
  */
 class vec3 {
     private static readonly dim: number = 3
@@ -11,18 +11,42 @@ class vec3 {
      */
 
     /**
-     *
+     * Create a new vector
+     * @param x
+     * @param y
+     * @param z
      */
     public static create(x?: number, y?: number, z?: number): vec_buffer {
         return new vec_buffer(vec3.dim)
     }
 
-    public static set() {
+
+    public static set(x: number, y: number, z: number) {
 
     }
 
+    public static setX() {
+
+    }
+
+    public static setY() {
+
+    }
+
+    public static setZ() {
+
+    }
+
+    public static multiply(k: number) {
+
+    }
+
+    public static equal(u: vec_buffer, v: vec_buffer): boolean {
+        return false
+    }
+
     /**
-     * Add to vector
+     * Calculate -- Add to vector
      * @param u first vector
      * @param v second vector
      *
@@ -32,8 +56,8 @@ class vec3 {
         return u
     }
 
-    public static dot() {
-
+    public static dot(u: vec_buffer, v: vec_buffer): vec_buffer {
+        return u
     }
 
     public static cross() {
