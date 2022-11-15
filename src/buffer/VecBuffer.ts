@@ -1,30 +1,30 @@
 import buffer from "src/buffer/buffer";
 
-class vec_buffer extends buffer{
+class VecBuffer extends buffer{
     constructor(dim: number, x?: number, y?: number, z?: number, w?: number) {
         super(dim)
 
         super.memo[0] = x ?? 1
         super.memo[1] = y ?? 1
         dim > 2 && ( super.memo[2] = z ?? 1 )
-        dim > 3 && ( super.memo[3] = z ?? 1 )
+        dim > 3 && ( super.memo[3] = w ?? 1 )
     }
 
-    get x() {
+    public get x() {
         return this.memo[0]
     }
 
-    get y() {
+    public get y() {
         return this.memo[1]
     }
 
-    get z() {
-        return this.memo[2]
+    public get z() {
+        return this.memo[2] ?? null
     }
 
-    get w() {
-        return this.memo[3]
+    public get w() {
+        return this.memo[3] ?? null
     }
 }
 
-export default vec_buffer
+export default VecBuffer

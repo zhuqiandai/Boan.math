@@ -1,14 +1,10 @@
-import vec_buffer from "src/buffer/vec_buffer";
+import VecBuffer from "src/buffer/VecBuffer";
 
 /**
- *  Static Class vector3 build and methods
+ * boan.math vector3
  */
 class vec3 {
     private static readonly dim: number = 3
-
-    /**
-     *  Construct Vector
-     */
 
     /**
      * Create a new vector
@@ -16,51 +12,82 @@ class vec3 {
      * @param y
      * @param z
      */
-    public static create(x?: number, y?: number, z?: number): vec_buffer {
-        return new vec_buffer(vec3.dim)
+    public static create(x?: number, y?: number, z?: number): VecBuffer {
+        return new VecBuffer(vec3.dim)
     }
 
 
-    public static set(x: number, y: number, z: number) {
+    /**
+     * Set vector x, y, z
+     * @param {VecBuffer} u
+     * @param {number} x
+     * @param {number} y
+     * @param {number} z
+     */
+    public static set(u: VecBuffer, x: number, y: number, z: number) {
 
     }
 
-    public static setX() {
+    public static setX(u: VecBuffer, k: number) {
 
     }
 
-    public static setY() {
+    public static setY(u: VecBuffer, k: number) {
 
     }
 
-    public static setZ() {
+    public static setZ(u: VecBuffer, k: number) {
 
     }
 
-    public static multiply(k: number) {
+    /**
+     * Generate a zero vec3
+     */
+    public static zero() {
+        return new VecBuffer(vec3.dim, 0, 0, 0)
+    }
+
+    public static length(u: VecBuffer) {
 
     }
 
-    public static equal(u: vec_buffer, v: vec_buffer): boolean {
+
+    public static equal(u: VecBuffer, v: VecBuffer): boolean {
+        return false
+    }
+
+    public static strictEqual(u: VecBuffer, v: VecBuffer): boolean {
         return false
     }
 
     /**
-     * Calculate -- Add to vector
+     * Add to vector
      * @param u first vector
      * @param v second vector
      *
      * @returns The result of u add v
      */
-    public static add(u: vec_buffer, v: vec_buffer): vec_buffer {
+    public static add(u: VecBuffer, v: VecBuffer): VecBuffer {
         return u
     }
 
-    public static dot(u: vec_buffer, v: vec_buffer): vec_buffer {
+    public static sub(u: VecBuffer, v: VecBuffer): VecBuffer {
         return u
     }
 
-    public static cross() {
+    public static multi(u: VecBuffer, k: number) {
+
+    }
+
+    public static dot(u: VecBuffer, v: VecBuffer): VecBuffer {
+        return u
+    }
+
+    public static cross(u: VecBuffer) {
+
+    }
+
+    public static distance(u: VecBuffer, v: VecBuffer) {
 
     }
 }
