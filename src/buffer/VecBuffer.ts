@@ -25,6 +25,22 @@ class VecBuffer extends buffer{
     public get w() {
         return this.memo[3] ?? null
     }
+
+    public set x(k: number) {
+        this[0] = k
+    }
+
+    public set y(k: number) {
+        this[1] = k
+    }
+
+    public set z(k: number) {
+        this[2] = k
+    }
+
+    public set w(k: number) {
+        this[3] = k
+    }
 }
 
 export default VecBuffer
